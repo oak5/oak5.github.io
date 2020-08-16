@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-12T12:55:10.938Z</updated>
+  <updated>2020-08-16T07:43:10.611Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,18 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/08/12/hello-world/"/>
-    <id>http://yoursite.com/2020/08/12/hello-world/</id>
-    <published>2020-08-12T12:55:10.938Z</published>
-    <updated>2020-08-12T12:55:10.938Z</updated>
+    <title>hexo使用</title>
+    <link href="http://yoursite.com/2020/08/16/hexo%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/08/16/hexo%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-16T07:37:31.000Z</published>
+    <updated>2020-08-16T07:43:10.611Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="hexo使用正确姿势"><a href="#hexo使用正确姿势" class="headerlink" title="hexo使用正确姿势"></a>hexo使用正确姿势</h2><ul><li>切换主题：将下载好的主题放在themes目录下</li><li>修改_config.yml中的theme: landscape改为theme: Tranquilpeak，然后重新执行hexo g来重新生成。</li></ul><ul><li>hexo g //生成</li><li>hexo s //启动服务，只能本地查看</li><li>hexo clean //遇到问题可以使用</li><li>hexo d //上传到GitHub</li></ul><h2 id="Tranquilpeak主题使用"><a href="#Tranquilpeak主题使用" class="headerlink" title="Tranquilpeak主题使用"></a>Tranquilpeak主题使用</h2><ul><li><p>下载Tranquilpeak主题放在themes目录下</p></li><li><p>修改_config.yml文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">theme: tranquilpeak</span><br><span class="line">&#x2F;&#x2F;post_asset_folder用来使用封面缩略图功能</span><br><span class="line">post_assert_folder: true</span><br></pre></td></tr></table></figure></li><li><p>tranquilpeak设置<br>进入tranquilpeak，打开_config.yml文件</p><ul><li><p>siderbar用来修改左侧菜单栏</p></li><li><p>Author 添加作者相关信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">sidebar_behavior: 1 #siderbar的样式，1-4的选择</span><br><span class="line">clear_reading: true </span><br><span class="line">thumbnail_image: true #是否显示缩略图</span><br><span class="line">thumbnail_image_position: right #显示缩略图的位置，有right,left,bottom</span><br><span class="line">auto_thumbnail_image: true #自动选择文章中第一幅图片为缩略图</span><br><span class="line">cover_image: cover.jpg #背景图片</span><br><span class="line">favicon: favicon.png #你的头像</span><br><span class="line">image_gallery: true</span><br><span class="line">archive_pagination: true #使用archives</span><br><span class="line">category_pagination: true #使用分类</span><br><span class="line">tag_pagination: true #使用标签</span><br><span class="line">&#96;&#96;&#96;   </span><br><span class="line">* 使用page页面 </span><br><span class="line"></span><br><span class="line">    &#96; hexo new page &quot;all-categories&quot; &#96;</span><br><span class="line">source中会产生all-categories文件夹，修改markdown内容为：</span><br></pre></td></tr></table></figure><p>title: “all-categories”<br>layout: “all-categories”<br>comments: false</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 使用all-tags页面</span><br><span class="line">hexo new page &quot;all-tags&quot;,在source产生一个新的文件夹all-tags，修改markdown内容为：</span><br></pre></td></tr></table></figure><p>title: “all-tags”<br>layout: “all-tags”<br>comments: false</p><pre><code></code></pre></li><li><p>新建笔记</p><p><code>hexo new 笔记名称</code><br>在/source/_posts路径下打开</p></li></ul></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h2 id=&quot;hexo使用正确姿势&quot;&gt;&lt;a href=&quot;#hexo使用正确姿势&quot; class=&quot;headerlink&quot; title=&quot;hexo使用正确姿势&quot;&gt;&lt;/a&gt;hexo使用正确姿势&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;切换主题：将下载好的主题放在themes目录下&lt;/li&gt;
+&lt;li</summary>
       
     
     
